@@ -30,6 +30,12 @@ public class LinkedList {
 		}
 	}
 	
+	public INode pop()
+	{
+		INode tempNode = this.head;
+		this.head = head.getNext();
+		return tempNode;
+	}
 	public void printMyNodes()			// Method to Print Value to LinkedList
 	{
 		StringBuffer myNodes = new StringBuffer("My Nodes :" );

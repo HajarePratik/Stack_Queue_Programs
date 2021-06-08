@@ -19,6 +19,11 @@ public class Stack
 		return linkedList.head;
 	}
 	
+	public INode pop() {
+		return linkedList.pop();
+	}
+
+
 	public void printStack()
 	{
 		linkedList.printMyNodes();
