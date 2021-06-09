@@ -51,6 +51,22 @@ public class StackQueue_Test {
 	        Assert.assertEquals(myFirstNode,peak);
 	    }
 		
+		// UC4 Delete a Value from Queue
+		@Test
+		public void given3NumberWhenDeletedToQueueShouldHaveLastAddedNode() {
+			MyNode<Integer> myFirstNode = new MyNode<>(56);
+			MyNode<Integer> mySecondNode = new MyNode<>(30);
+			MyNode<Integer> myThirdNode = new MyNode<>(70);
+			Queue myQueue = new Queue();
+			myQueue.enqueue(myFirstNode);
+			myQueue.enqueue(mySecondNode);
+			myQueue.enqueue(myThirdNode);
+			myQueue.dequeue();
+			INode peak = myQueue.peak();
+			myQueue.printQueue();
+			Assert.assertEquals(mySecondNode, peak);
+		}
+		
 		
 		
 				
