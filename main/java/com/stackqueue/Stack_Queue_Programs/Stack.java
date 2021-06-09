@@ -13,16 +13,15 @@ public class Stack
 	public void push(INode myNode) {
 		linkedList.add(myNode);
 	}
-
-	public INode peak() {
-		// TODO Auto-generated method stub
-		return linkedList.head;
-	}
 	
 	public INode pop() {
 		return linkedList.pop();
 	}
 
+	public INode peak() {
+		// TODO Auto-generated method stub
+		return linkedList.head;
+	}
 
 	public void printStack()
 	{
